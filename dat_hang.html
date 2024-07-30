@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha2-dist/css/bootstrap.min.css">
+    <script src="bootstrap-5.3.0-alpha2-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="font-awesome/css/fontawesome.css">
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropdown-menu {
+            display: none;
+            width: 700px;
+            left: 120px;
+            height: 100%;
+            top: 0;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body onload="nap()">
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light sticky-md-top">
+            <div class="container-fluid" style="width: 100%;">
+                <div class="row" style="width: 100%;">
+                    <div class="col-lg-2 col-md-4">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="img/logoass.svg" alt="" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="col-lg-10 col-md-7">
+                        <div class="row container-fluid">
+                            <div class="col-lg-6 col-md-10 col-sm-9">
+                                <form class="d-flex">
+                                    <input style="border-radius:20px ; border: 1px red;" class="form-control me-2"
+                                        type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-danger" type="submit"
+                                        style="margin-left: -10%;border-top-right-radius:20px ;border-bottom-right-radius:20px ;">Search</button>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-md-2 col-sm-3 container-fluid">
+                                <ul class="nav d-flex row" style="padding: 0;">
+                                    <li class="nav d-none d-lg-block nav-item col-3">
+                                        <a class="nav-link fw-semibold text-dark" aria-current="page" href="#"><i
+                                                class="fab fa-wpforms"></i> Đăng ký</a>
+                                    </li>
+                                    <li class="nav d-none d-lg-block nav-item col-3">
+                                        <a class="nav-link  fw-semibold text-dark" href="#"><i
+                                                class="fas fa-user-tie"></i>Đăng nhập</a>
+                                    </li>
+                                    <li class="nav d-none d-lg-block nav-item col-3">
+                                        <a class="nav-link fw-semibold text-dark" href="#"><i
+                                                class="fas fa-tag"></i>Khuyến
+                                            mãi</a>
+                                    </li>
+                                    <li class="nav-item d-flex justify-content-end col-lg-3 col-md-10">
+                                        <a class="nav-link fw-semibold text-dark" href="dat_hang.html"><i
+                                                class="fas fa-shopping-cart"></i>Giỏ hàng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row d-none d-lg-block">
+                            <div class="col">
+                                <ul class="nav">
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link text-danger fw-bold fs-h4 text-uppercase" aria-current="page"
+                                            href="#"><i class="fas fa-phone"></i>tổng đài</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link text-danger fw-bold fs-h4 text-uppercase" href="#"><i
+                                                class="fab fa-youtube"></i>video</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link text-danger fw-bold fs-h4 text-uppercase" href="#"><i
+                                                class="far fa-newspaper"></i>tin công nghệ</a>
+                                    </li>
+                                    <li class="nav-item me-3">
+                                        <a class="nav-link text-danger fw-bold fs-h4 text-uppercase" href="#"><i
+                                                class="fas fa-user"></i>tuyển dụng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid row">
+                <nav class="navbar bg-body-tertiary col-sm-2 col-md-2 col-lg-10 row">
+                    <p><a class="btn btn-secondary d-lg-none d-block col-sm-12" data-bs-toggle="collapse"
+                            href="#multiCollapseExample1" role="button" aria-expanded="false"
+                            aria-controls="multiCollapseExample1"><i class="fas fa-bars fa-lg"
+                                style=" width: 40px;padding: 0;aspect-ratio: 10/5;"></i></a></p>
+                    <div class="row" style="margin-left: 0%;padding: 0;">
+                        <div class="col-12">
+                            <div class="collapse multi-collapse container-fluid" id="multiCollapseExample1"
+                                style="padding: 0;">
+                                <div class="bg-light row" style="margin: 0;padding: 0;">
+                                    <ul class="col" style="list-style: none;padding: 0;">
+                                        <li><a class="text-decoration-none fs-5 text-dark" data-bs-toggle="collapse"
+                                                href="#menu-doc1" role="button" aria-expanded="false"
+                                                aria-controls="menu-doc1" href="" style="width: 60px;"><i
+                                                    class="fas fa-laptop"></i>Laptop</a>
+                                            <div class=" bg-light" style="margin: 0;padding: 0;width: 100px;">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="collapse multi-collapse " id="menu-doc1">
+                                                            <div class=" bg-light"
+                                                                style="margin: 0;padding: 0;margin-right: -15%;padding-inline-start: 0;">
+                                                                <ul class="menu-doc1-ul" style="margin-right: -15px;">
+                                                                    <li><a class="fs-6 fw-semibold" href="">Thương
+                                                                            hiệu</a></li>
+                                                                    <li><a class="fs-6 fw-semibold" href="">Bán theo
+                                                                            giá</a></li>
+                                                                    <li><a class="fs-6 fw-semibold" href="">Bán theo
+                                                                            CPU</a></li>
+                                                                    <li><a class="fs-6 fw-semibold" href="">Bán thep nhu
+                                                                            cầu</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </li>
+                                        <li><a class="text-decoration-none fs-5 text-dark" data-bs-toggle="collapse"
+                                                href="#menu-doc2" role="button" aria-expanded="false"
+                                                aria-controls="menu-doc1" href=""><i class="fas fa-laptop"></i>Laptop
+                                                gaming</a>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="collapse multi-collapse" id="menu-doc2">
+                                                        <div class=" bg-light" style="margin: 0;padding: 0;">
+                                                            <ul class="menu-doc1-ul">
+                                                                <li><a class="fs-6 fw-semibold" href="">Thương hiệu</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">Bán theo giá</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">LENOVO</a></li>
+                                                                <li><a class="fs-6 fw-semibold" href="">ACER</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a class="text-decoration-none fs-5 text-dark" data-bs-toggle="collapse"
+                                                href="#menu-doc3" role="button" aria-expanded="false"
+                                                aria-controls="menu-doc1" href=""><i
+                                                    class="fas fa-computer-speaker"></i>PC gaming</a>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="collapse multi-collapse" id="menu-doc3">
+                                                        <div class=" bg-light" style="margin: 0;padding: 0;">
+                                                            <ul class="menu-doc1-ul">
+                                                                <li><a class="fs-6 fw-semibold" href="">GVN TITAN</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">GVN PHANTOM</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">GVN VIPER</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">GPN MINION</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a class="text-decoration-none fs-5 text-dark" data-bs-toggle="collapse"
+                                                href="#menu-doc4" role="button" aria-expanded="false"
+                                                aria-controls="menu-doc1" href=""><i
+                                                    class="fas fa-computer-speaker"></i>PC đồ hoạ</a>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="collapse multi-collapse" id="menu-doc4">
+                                                        <div class=" bg-light" style="margin: 0;padding: 0;">
+                                                            <ul class="menu-doc1-ul">
+                                                                <li><a class="fs-6 fw-semibold" href="">Thiết kế 2D</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">Thiết kế 3D</a>
+                                                                </li>
+                                                                <li><a class="fs-6 fw-semibold" href="">Hoạt hoạ, chỉnh
+                                                                        sửa video</a></li>
+                                                                <li><a class="fs-6 fw-semibold" href="">Render</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="col-sm-10"></div>
+   
+                </li>
+                </ul>
+
+            </div></nav>
+            <div class="menu-an container-fluid bg-white  d-none d-lg-block " style="width: 10%;margin-right: 100%;">
+                <a href="" class="text-decoration-none btn-secondary btn" style="position: relative;width: 100%;"><i
+                        class="fas fa-bars"></i>Menu</a>
+                <ul class="menu1-a bg-white">
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark" > <i
+                                class="fas fa-laptop"></i>Laptop</a>
+                        <ul class="dropdown-menu container-fluid" style="width: 700px;">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">Thương hiệu</a>
+                                <ul style="margin: 0;padding: 0;">
+                                    <li><a class="menu1-li-a fs-5" href="">ASUS</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">ACER</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">MSI</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">LENOVO</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo giá bán</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Dưới 15 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 15 đến 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Trên 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href=""></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo CPU</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I3</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I5</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I7</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel gen 13</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo nhu cầu</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Đồ hoạ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Học sinh-sinh viên</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mỏng nhẹ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX 40 series</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark" style="width: 10px;padding-right: -15px;"> <i
+                                class="fas fa-laptop" ></i>Laptop gaming</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">Thương hiệu</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">ASUS</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">ACER</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">MSI</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">DELL</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo giá bán</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Dưới 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 20 đến 25 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Trên 25 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href=""></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo CPU</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I3</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I5</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I7</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel gen 13</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo nhu cầu</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Đồ hoạ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Học sinh-sinh viên</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mỏng nhẹ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX 40 series</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark" ><i
+                                class="fas fa-computer-speaker"></i>PC gaming</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">GVN TITAN</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Titan plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Titan plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Titan plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Titan plus</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">GVN PHANTOM</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Phantom plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Phantom plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Phantom plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Phantom plus</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">GVN VIPER</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Viper plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Viper plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Viper plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Viper plus</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">GVN MINION</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Minion plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Minion plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Minion plus</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Minion plus</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark" ><i class="fas fa-computer-speaker"></i>PC đồ hoạ</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">Thiết kế 2D</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">ASUS</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">ACER</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">MSI</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">DELL</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo giá bán</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Dưới 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 20 đến 25 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Trên 25 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href=""></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Thiết kế 2D</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I3</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I5</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I7</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel gen 13</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Hoạt hoạ chỉnh sửa</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Đồ hoạ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Học sinh-sinh viên</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mỏng nhẹ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX 40 series</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark" >
+                            <i class="fas fa-microchip"></i>Linh kiện PC</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">VGA</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX-4090</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX-4090</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX-4090</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX-4090</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">CPU</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Itel core I9</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Itel core I9</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Itel core I9</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Itel core I9</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">SSD-HDD</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">SSD-480G/512G</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">SSD-480G/512G</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">SSD-480G/512G</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">SSD-480G/512G</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Case</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Case từ 1 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Case từ 1 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Case từ 1 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Case từ 1 triệu</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark" >
+                            <i class="fab fa-apple"></i>APPLE</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">Mac Book</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Mac Book Air</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air M2</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air M2</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air M2</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Air M2</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Mac Book Pro</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Pro 16</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Pro 16</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Pro 16</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mac Book Pro 16</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">IMac</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">iMac M1 24</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">iMac M1 24</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">iMac M1 24</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">iMac M1 24</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark">
+                            <i class="fas fa-desktop-alt"></i>Màn hình</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">Hãng sản xuất</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">ASUS</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">ACER</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">MSI</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">DELL</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo giá bán</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 15 đến 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 15 đến 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 15 đến 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 15 đến 20 triệu</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Đọ phân giải</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">2K 1440P</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">2K 1440P</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">2K 1440P</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">2K 1440P</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Tần số quét</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">240Hz</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">240Hz</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">240Hz</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">240Hz</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu-an-a text-decoration-none fs-5 text-dark"><i
+                                class="fas fa-computer-speaker"></i>PC gaming</a>
+                        <ul class="dropdown-menu container-fluid">
+                            <li><a class="text-danger text-decoration-none fw-bold" style="margin: 0;padding: 0;"
+                                    href="#">Thương hiệu</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">ASUS</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">ACER</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">MSI</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">DELL</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo giá bán</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Dưới 20 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Từ 20 đến 25 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Trên 25 triệu</a></li>
+                                    <li><a class="menu1-li-a fs-5" href=""></a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo CPU</a>
+
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I3</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I5</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel core I7</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Intel gen 13</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="text-danger text-decoration-none fw-bold" href="#">Theo nhu cầu</a>
+                                <ul>
+                                    <li><a class="menu1-li-a fs-5" href="">Đồ hoạ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Học sinh-sinh viên</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">Mỏng nhẹ</a></li>
+                                    <li><a class="menu1-li-a fs-5" href="">RTX 40 series</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+    </div>
+    
+
+    <div class="container-fluid" style="margin-top: 5%;">
+        <center>
+            <h3>GIỎ HÀNG</h3>
+        </center>
+        <div class="table-responsive">
+            <table >
+                <thead>
+                    <tr>
+                        <th scope="col">Sản phẩm</th>
+                        <th scope="col">Tên sản phẩm</th>
+                        <th scope="col">Số lượng</th>
+                        <th scope="col">Giá tiền</th>
+                        <th scope="col">Xoá</th>
+                    </tr>
+                </thead>
+                <tbody id="datarow">
+                    <!-- <tr>
+                        <th scope="row"><img
+                                src="https://product.hstatic.net/200000722513/product/viper_a4060_1f302310f8704e7ca134df72af8e460f_medium.png"
+                                class="img-fluid" alt=""></th>
+                        <td style="width: 30%;"><a href="san_pham.html" class="text-decoration-none fw-bold">GVN Homework R3 </a>
+                        </td>
+                        <td style="width: 10%;"><input type="number" value="1" min="0" name="" id=""
+                                style="width: 50%;"></td>
+                        <td>5,190,000₫</td>
+                        <td><i class="fas fa-trash-alt" ></i></td>
+                    </tr> -->
+                  
+                </tbody>
+                <tbody>
+                <tr>
+                    <td scope="rowgroup" colspan="1">
+                        <p class="fw-bold fs-4">Tổng tiền:</p>
+                    </td>
+                    <td id="tongtien" ></td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+        <textarea name="" id="" cols="30" rows="3" style="width: 100%;"></textarea>
+        <div class="row" style="margin-top: 20px;margin-bottom: 50px;">
+            <div class="col-lg-6 d-none d-lg-block"></div>
+            <button type="button" class="btn btn-danger col-2" style="margin: 5px;">Thanh toán</button>
+            <button type="button" class="btn btn-danger col-2" style="margin: 5px;">Cập nhật</button>
+
+        </div>
+    </div>
+
+    <footer class="container-fluid">
+        <div class="input-group mb-3 row">
+            <div class="col-lg-2 col-md-0"></div>
+            <div class="col-10 row">
+                <input type="text" class="form-control col" placeholder="Nhập email tại đây"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-danger col-lg-1 col-md-2" type="button" id="button-addon2">Button</button>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5>CÔNG TY TNHH THƯƠNG MẠI GEARVN</h5>
+                <h5>EMAIL: CSKH@GEARVN.COM</h5>
+                <p>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ: (Làm việc từ 08h00 - 21h00)</p>
+                <p>
+                <h5> Gọi mua hàng :</h5>1800 6975</p>
+                <p>
+                <h5> Hỗ trợ khách hàng : </h5> 1800 6173</p>
+                <a href="" class="text-decoration-none fs-6 fw-bold">
+                    Chính sách bảo hành <br>
+                    Chính sách thanh toán <br>
+                    Chính sách giao hàng <br>
+                    Chính sách bảo mật <br>
+                    <img src="https://theme.hstatic.net/1000026716/1000440777/14/20150827110756-dathongbao.png" alt=""
+                        style="width: 50%;">
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <h5><a href="" class="text-decoration-none fs-4">HỆ THỐNG CỬA HÀNG:</a></h5>
+                <hr>
+                <p>
+                    SHOWROOM HCM (Làm việc từ 8h00 - 21h00) <br>
+                    - Địa chỉ 1: 78-80-82 Hoàng Hoa Thám, Phường 12, Quận Tân Bình. <br>
+                    - Địa chỉ 2: 905 Kha Vạn Cân, Phường Linh Tây, Thành phố Thủ Đức.<br>
+                    - Địa chỉ 3: 1081 - 1083 Trần Hưng Đạo, Phường 5, Quận 5.<br>
+                    - Địa chỉ 4: 415 An Dương Vương, Phường 10, Quận 6.<br>
+                    SHOWROOM HN (Làm việc từ 8h00 - 21h00)<br>
+                    - Địa chỉ 1: 162 - 164 Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội<br>
+                    - Địa chỉ 2: 460 Minh Khai, Phường Vĩnh Tuy, Quận Hai Bà Trưng, Hà Nội<br>
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <h4>FANPAGE</h4>
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fgearvnhcm%2F&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=744957446977212"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script src="assScript.js"></script>
+</body>
+
+</html>
